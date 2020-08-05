@@ -1,0 +1,33 @@
+@import "../../variables.scss";
+
+.navigation{
+  display: flex;
+  justify-content: space-between;
+  height: 5vh;
+  background-color: #222222;
+  color: white;
+  align-items: center;
+  padding: 0 16px;
+}
+
+.title {
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  font-family: $cursive-font;
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+.logo{
+  width: 4vw;
+  margin-right: 16px;
+}
+
+.links{
+  display:flex;
+}
+
+.link {
+  margin: 10px;
+}
