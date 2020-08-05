@@ -22,3 +22,17 @@
   font-weight: bold;
 }
 
+@media (max-width: $tablet-max) {
+  .intro {
+    background-image:  url(../../images/introPic.jpg);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+
+  .hey {
+    font-size:4rem;
+    color: $dark-gray;
+  }
+
+}
