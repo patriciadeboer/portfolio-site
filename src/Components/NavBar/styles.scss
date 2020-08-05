@@ -4,7 +4,7 @@
   display: flex;
   justify-content: space-between;
   height: 5vh;
-  background-color: #222222;
+  background-color: $dark-gray;
   color: white;
   align-items: center;
   padding: 0 16px;
@@ -16,11 +16,11 @@
   justify-content: center;
   font-family: $cursive-font;
   font-weight: 700;
-  font-size: 2.5rem;
+  font-size: 2.7rem;
 }
 
 .logo{
-  width: 4vw;
+  height: 4vh;
   margin-right: 16px;
 }
 

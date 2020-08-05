@@ -7,7 +7,7 @@ export const NavBar = () =>{
   return (
     <div className="navigation">
       <div className="title">
-        <img src={logo} alt="logo" className="logo" width="50px"/>
+        <img src={logo} alt="logo" className="logo" />
         <div>Patricia de Boer</div>
       </div>
       <div className="links">

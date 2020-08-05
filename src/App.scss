@@ -1,9 +1,8 @@
-$green: #15b78f;
-$dark-gray: #222222;
+@import "./variables.scss";
 
 .App {
   text-align: center;
-  background-color: $green;
+  background-color: $teal;
   height:100vh;
 }
 
