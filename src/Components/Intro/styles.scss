@@ -1,21 +1,21 @@
-@import "../../variables.scss";
+@import '../../variables.scss';
 
 .intro {
   height: 100vh;
   width: 100vw;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(../../images/introPic.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../../images/introPic.jpg);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  display:flex;
-  align-items: center;
-  max-height:100vh;
-  
+  display: flex;
+
+  max-height: 100vh;
 }
 
 .mobile-pic {
-  display:none
+  display: none;
 }
 
 .hey {
@@ -24,24 +24,32 @@
   color: $teal;
   font-weight: bold;
   width: 50vw;
+  align-self: center;
+}
+
+.arrow {
+  align-self: flex-end;
+  padding-bottom: 24px;
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 @media (max-width: $tablet-max) {
   .intro {
-    background-image:none;
-    display:inline;
+    background-image: none;
+    display: inline;
   }
 
-  .mobile-pic{
+  .mobile-pic {
     display: initial;
-    width:100vw;
+    width: 100vw;
   }
 
   .hey {
-    padding-top:72px;
-    font-size:4rem;
+    padding-top: 72px;
+    font-size: 4rem;
     color: $dark-gray;
     width: auto;
   }
-
 }
