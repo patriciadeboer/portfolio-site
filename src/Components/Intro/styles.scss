@@ -1,38 +1,47 @@
 @import "../../variables.scss";
 
-// .pic {
-//   // width: 100vw;
-//   max-height: 95vh;
-// }
-
 .intro {
+  height: 100vh;
   width: 100vw;
-  height:95vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(../../images/introPic.jpg);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  display:flex;
+  align-items: center;
+  max-height:100vh;
+  
+}
+
+.mobile-pic {
+  display:none
 }
 
 .hey {
   font-family: $cursive-font;
-  font-size: 10rem;
+  font-size: 10vw;
   color: $teal;
   font-weight: bold;
+  width: 50vw;
 }
 
 @media (max-width: $tablet-max) {
   .intro {
-    background-image:  url(../../images/introPic.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
+    background-image:none;
+    display:inline;
+  }
+
+  .mobile-pic{
+    display: initial;
+    width:100vw;
   }
 
   .hey {
+    padding-top:72px;
     font-size:4rem;
     color: $dark-gray;
+    width: auto;
   }
 
 }
